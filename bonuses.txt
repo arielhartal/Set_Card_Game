@@ -1,0 +1,76 @@
+BONUS CHALLENGE FORM
+--------------------
+
+For each bonus challenge you have implemented, please replace the sentence "We are not entitled to this bonus."
+with a short description of:
+
+1. How it was implemented in your code
+2. Where it was used (in which class methods).
+3. How you tested that it is working correctly.
+
+--------------------
+
+1. Fully supporting all configuration fields and avoiding the use of magic numbers
+
+1.
+We used in the desired methods by turning to the env class and from there to the config class,
+avoiding magic numbers was done by declaring fields in the constructors and by using the fields from the config class.  
+
+2.
+In the player class we used the configuration fields - tableSize, penaltyFreezeMillis and pointFreezeMillis,
+and the fields: panTime, celebrationTime, numOfTokens, addedTime, sleepTimePenalty, sleepTimeTired, to avoid using magic numbers.
+tableSize was used in the method createArtificialIntelligence.
+penaltyFreezeMillis was used in the method PlayerPenalty.
+pointFreezeMillis was used in the method PlayerCelebrate.
+panTime was used in the methods penalty and PlayerPenalty.
+celebrationTime was used in the methods point and PlayerCelebrate.
+numOfTokens was used in the methods run and keyPressed.
+addedTime was used in the method PlayerCelebrate.
+sleepTimePenalty was used in the method PlayerPenalty.
+sleepTimeTired was used in the method PlayerTired.
+
+In the dealer class we used the configuration fields - deckSize, endGamePauseMillies, hints, turnTimeoutMillis, turnTimeoutWarningMillis,
+and the fields: setSize, NumOfEmptySlots, waitingTime, lastSlotOfTable, addedTime, lastIndexOfSet to avoid using magic numbers.
+deckSize was used in the constructor method.
+endGamePauseMillies was used in the method run.
+hints was used in the method timerLoop.
+turnTimeoutMillis was used in the methods updateTimerDisplay, resetReshuffleTime, resetElapsedTime.
+turnTimeoutWarningMillis was used in the method updateTimerDisplay.
+setSize was used in the methods checkSet and checkAllPlayersSets.
+NumOfEmptySlots was used in the methods removeCardsFromTable, placeCardsOnTable, removeAllCardsFromTable.
+waitingTime was used in the method sleepUntilWokenOrTimeout.
+lastSlotOfTable was used in the method placeCardsOnTable.
+addedTime was used in the method updateTimerDisplay.
+lastIndexOfSet was used in the method checkSet.
+
+In the table class we used the configuration fields - players, tableSize, deckSize, tableDelayMillis, 
+players was used in one of the constructors and the methods removeCard and removeAllTokens.
+tableSize was used in one of the constructors.
+deckSize was used in one of the constructors.
+tableDelayMillis was used in the methods placeCard, removeCard and removeToken.
+
+3. Every change from magic number to field we ran the program before and after change and checked if it works like it should be.
+For using the configuration fields we checked by running the program few times by changing the config properties each time,
+and checked if it still worked properly.
+--------------------
+
+2. Terminating all threads (that you created) gracefully and in reverse order to the order they were created in.
+
+We are not entitled to this bonus.
+
+--------------------
+
+3. Handling the config.turnTimeoutMillis value as follows:
+config.turnTimeoutMillis < 0: display nothing.
+config.turnTimeoutMillis = 0: display a timer since the last action (reshuffle or set collected).
+Note: in modes without a countdown timer the dealer must ensure there is always at least one legal set on the table.
+
+We are not entitled to this bonus.
+
+--------------------
+
+4. Making sure that the threads do not wake up unless some actual job needs to be done (e.g., a value needs to be
+changed on the display, key input needs to be handled, etc.) and the only threads created by you are:
+1 thread per player + 1 additional thread for non-human players.
+
+We are not entitled to this bonus.
