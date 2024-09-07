@@ -23,3 +23,28 @@ The dealer controls the overall game flow. It manages player threads, shuffles a
 
 # Graphical User Interface & Keyboard Input
 This project includes a graphical interface for the game. Players can interact with it through keyboard input.
+
+# Getting Started
+
+To run the Set Game, follow these steps:
+
+1. Ensure that you have Java installed on your machine.  
+2. Clone the project repository to your local machine.  
+3. Open a terminal or command prompt and navigate to the project directory.  
+4. Compile the source code by running the following command:
+   ```cpp
+   javac Main.java
+   ```
+5. Run the game by executing the following command:
+   ```cpp
+   java Main
+   ```
+6. Enjoy playing the Set Game!
+
+# Configuration
+
+The game configuration is stored in the config.properties file. You can modify this file to adjust various settings, such as the number of features, options per feature, and more. Refer to the comments in the config.properties file for more information on each configurable option.
+
+# License
+
+This project is licensed under the MIT License.
